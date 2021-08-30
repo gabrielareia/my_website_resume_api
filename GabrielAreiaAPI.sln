@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GabrielAreiaAPI", "GabrielAreiaAPI\GabrielAreiaAPI.csproj", "{5C03335B-2D15-41E4-A958-D77B9BE05F98}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "..\..\LibraryClasses\Models\Models\Models.csproj", "{37E1BBE7-FFDB-4929-9FF0-36D16FC758F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Libraries", "0 - Libraries", "{0A27B849-3184-4DEF-A4DA-F9C59645FEE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{820AD03C-98E6-4F05-9EAA-0E1C2C9E2EE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Tests", "2 - Tests", "{E2CCE03D-C035-4886-BB0C-091958FAFA19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostResumeApi", "..\..\PostResume\PostResumeApi\PostResumeApi\PostResumeApi.csproj", "{589F29E3-7623-4762-8453-FC75E42EED4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C03335B-2D15-41E4-A958-D77B9BE05F98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C03335B-2D15-41E4-A958-D77B9BE05F98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C03335B-2D15-41E4-A958-D77B9BE05F98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C03335B-2D15-41E4-A958-D77B9BE05F98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37E1BBE7-FFDB-4929-9FF0-36D16FC758F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E1BBE7-FFDB-4929-9FF0-36D16FC758F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E1BBE7-FFDB-4929-9FF0-36D16FC758F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E1BBE7-FFDB-4929-9FF0-36D16FC758F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{589F29E3-7623-4762-8453-FC75E42EED4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{589F29E3-7623-4762-8453-FC75E42EED4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{589F29E3-7623-4762-8453-FC75E42EED4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{589F29E3-7623-4762-8453-FC75E42EED4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C03335B-2D15-41E4-A958-D77B9BE05F98} = {820AD03C-98E6-4F05-9EAA-0E1C2C9E2EE4}
+		{37E1BBE7-FFDB-4929-9FF0-36D16FC758F7} = {0A27B849-3184-4DEF-A4DA-F9C59645FEE0}
+		{589F29E3-7623-4762-8453-FC75E42EED4E} = {E2CCE03D-C035-4886-BB0C-091958FAFA19}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63DB73A4-EDDC-41A6-89B4-BD6901DF3769}
+	EndGlobalSection
+EndGlobal
