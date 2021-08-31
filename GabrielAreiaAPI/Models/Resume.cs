@@ -8,6 +8,7 @@ namespace GabrielAreiaAPI.Models
     public class Resume
     {
         public int Id { get; set; }
+        public string Language { get; set; }
         public string FullName { get; set; }
         public int YearBirth { get; set; }
         public byte[] Picture { get; set; }
@@ -68,6 +69,7 @@ namespace GabrielAreiaAPI.Models
     public class ResumeApi
     {
         public int Id { get; set; }
+        public string Language { get; set; }
         public string FullName { get; set; }
         public int YearBirth { get; set; }
         public string PictureAddress { get; set; }
@@ -90,6 +92,7 @@ namespace GabrielAreiaAPI.Models
             var result = new ResumeApi()
             {
                 Id = resume.Id,
+                Language = resume.Language,
                 FullName = resume.FullName,
                 YearBirth = resume.YearBirth,
                 PictureAddress = $"/api/resume/{resume.Id}/image",

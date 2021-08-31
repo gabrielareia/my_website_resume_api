@@ -15,6 +15,10 @@ namespace GabrielAreiaAPI.ResumeDb.Configurations
                 .IsRequired();
 
             builder
+                .Property(r => r.Language)
+                .HasMaxLength(100);
+
+            builder
                 .Property(r => r.YearBirth)
                 .IsRequired();
 

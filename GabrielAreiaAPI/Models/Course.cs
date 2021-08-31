@@ -9,6 +9,7 @@ namespace GabrielAreiaAPI.Models
     public class Course
     {
         public int Id { get; set; }
+        public int Order { get; set; }
         public string Name { get; set; }
         public string Institution { get; set; }
         public string Subject { get; set; }
@@ -28,6 +29,7 @@ namespace GabrielAreiaAPI.Models
     public class CourseApi
     {
         public int Id { get; set; }
+        public int Order { get; set; }
         public string Name { get; set; }
         public string Institution { get; set; }
         public string Subject { get; set; }
@@ -46,15 +48,16 @@ namespace GabrielAreiaAPI.Models
             return new CourseApi()
             {
                 Id = course.Id,
+                Order = course.Order,
                 Name = course.Name,
                 Institution = course.Institution,
                 Subject = course.Subject,
                 YearStart = course.YearStart,
                 YearEnd = course.YearEnd,
                 Description = course.Description,
-                CertificateImageAddress = $"/api/courses/{course.Id}/certificate",
+                CertificateImageAddress = course.CertificateImage == null ? null : $"/api/courses/{course.Id}/certificate",
                 CertificateAddress = course.CertificateAddress,
-                LogoAddress = $"/api/courses/{course.Id}/logo",
+                LogoAddress = course.Logo == null ? null : $"/api/courses/{course.Id}/logo",
                 InstitutionWebsite = course.InstitutionWebsite
             };
         }

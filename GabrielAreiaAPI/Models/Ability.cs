@@ -6,6 +6,7 @@ namespace GabrielAreiaAPI.Models
     public class Ability
     {
         public int Id { get; set; }
+        public int Order { get; set; }
         public string Subject { get; set; }
         public string Experience { get; set; }
         public string Description { get; set; }
@@ -19,6 +20,7 @@ namespace GabrielAreiaAPI.Models
     public class AbilityApi
     {
         public int Id { get; set; }
+        public int Order { get; set; }
         public string Subject { get; set; }
         public string Experience { get; set; }
         public string Description { get; set; }
@@ -32,10 +34,11 @@ namespace GabrielAreiaAPI.Models
             return new AbilityApi()
             {
                 Id = ability.Id,
+                Order = ability.Order,
                 Subject = ability.Subject,
                 Experience = ability.Experience,
                 Description = ability.Description,
-                LogoAddress = $"/api/abilities/{ability.Id}/logo"
+                LogoAddress = ability.Logo == null ? null : $"/api/abilities/{ability.Id}/logo"
             };
         }
 

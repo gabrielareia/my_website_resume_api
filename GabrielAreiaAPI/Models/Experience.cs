@@ -3,6 +3,7 @@
     public class Experience
     {
         public int Id { get; set; }
+        public int Order { get; set; }
         public string Company { get; set; }
         public string Field { get; set; }
         public string Role { get; set; }
